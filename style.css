@@ -1,0 +1,224 @@
+body { 
+	margin: 0;
+	padding: 0;
+	font-size: 18px; 
+	font-family: "Roboto"; 
+	background: #fff;   
+}
+ul {
+	list-style: none;
+}
+article, section, ul, li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	-webkit-transition: 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: 0.2s;
+}
+h1, h2, h3, h4, h5, a, p {
+	text-shadow: 0px 0px 0px rgba(150, 150, 150, 0);
+	text-decoration: none !important;
+	margin: 0;
+	padding: 0;
+}
+
+/** Header ****************/
+
+.header {
+	display: block;
+	padding: 1em;
+ 	text-align: center;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-ms-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+}
+.headerFixed { 
+	background: rgba(0, 0, 0, 0.4);
+}
+.headerLogo {
+	width: 200px;
+	height: 40px; 
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.1);
+}
+.headerLogo a {
+	width: 100%;
+	height: 100%; 
+	display: block; 
+}
+.headerMobileBtn {
+	width: 30px;
+	height: 30px;
+	float: right;
+	background: #fff;
+}
+.headerMobileBtn a {
+	width: 40px;
+	height: 40px;
+	float: right;
+	background: #fff;
+	cursor: pointer;
+}
+.headerMenu {
+	margin: 0;
+	padding: 0;
+	display: none;
+	vertical-align: middle;
+}
+.headerMenu ul {
+	display: block; 
+	margin: 0; 
+}
+.headerMenu ul li {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+.headerMenu ul li a {
+	color:#fff;
+	font-size: 1em;
+}
+
+/** Section ****************/
+ 
+.section {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid blue;
+}
+.sectionContent {
+	display: block;
+	margin: 1em;
+}
+/*
+.sectionContentMiddle {
+	width: 100%;
+	text-align: center;
+	background: blue;
+	display: block;
+}
+*/
+.sectionContentLeft,
+.sectionContentRight {
+	display: inline-block;
+}
+.title {
+	font-size: 2em;
+}
+.subtitle {
+	font-size: 1em;
+	text-transform: capitalize;
+	margin-bottom: 0.8em;
+}
+.text {
+	margin-bottom: 1em;
+}
+
+/** Home ****************/
+
+.home {
+	background: rgba(200, 0, 0, 1);
+	background-size: cover;
+	background-position: fixed;
+	padding: 3em 0;
+	padding-top: 130px;
+	text-align: center;
+}
+.homeHeadline {
+	color: #fff;
+	font-size: 1.5em;
+}
+.homeSubheadline {
+	font-size: 1.2em;
+	color: rgba(255,255,255, 0.8);
+}
+
+/** Projects *************/
+
+.projects {
+	background: #f4f4f4;
+}
+
+.hireUs {
+	background: #9f9f9f;
+}
+
+@media all and (min-width: 800px) {
+ 
+ 	.headerMenu {
+ 		display: inline-block;
+ 	}
+
+ 	/** Home **/
+
+ 	.homeHeadline {
+ 		font-size: 2.3em;
+ 	}
+ 	.homeSubheadline {
+ 		font-size: 1.6em;
+ 	}
+ 
+ }
+ @media all and (min-width: 1000px) {
+
+ 	/** Header ****************/
+
+ 	.headerMobileBtn {
+ 		display: none !important;
+ 	}
+ 	.headerMenu {
+ 		display: inline-block;
+ 	}
+
+ 	.sectionContent {
+ 		width: 950px;
+ 		margin: 2em auto;
+ 	}
+ 	.sectionContentLeft,
+ 	.sectionContentRight {
+ 		width: 47.5%;
+ 	}
+
+ 	.title {
+ 		font-size: 2.7em;
+ 	}
+ 	.subtitle {
+ 		font-size: 1.3em;
+ 		text-transform: capitalize;
+ 		margin-bottom: 0.8em;
+ 	}
+ 	.text {
+ 		margin-bottom: 0;
+ 	}
+
+ 	/** Home ****************/
+
+ 	.home {
+ 		height: 100vh;
+ 		padding: 0;
+ 	} 
+ 	.homeContent {
+ 		position: absolute;
+ 		width: 800px;
+ 		height: 120px;
+ 		top: 50%;
+ 		left: 50%;
+ 		margin-left: -400px;
+ 		margin-top: -60px; 
+ 		text-align: center;
+ 	}
+ 	.homeHeadline {
+ 		font-size: 3.5em;
+ 		letter-spacing: 0;
+ 	}
+ 	.homeSubheadline {
+ 		font-size: 1.8em;
+ 	}
+ }
