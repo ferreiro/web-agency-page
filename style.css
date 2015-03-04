@@ -91,7 +91,6 @@ h1, h2, h3, h4, h5, a, p {
 .section {
 	margin: 0;
 	padding: 0;
-	border-bottom: 1px solid blue;
 }
 .sectionContent {
 	display: block;
@@ -215,10 +214,10 @@ h1, h2, h3, h4, h5, a, p {
  		text-align: center;
  	}
  	.homeHeadline {
- 		font-size: 3.5em;
+ 		font-size: 4em;
  		letter-spacing: 0;
  	}
  	.homeSubheadline {
- 		font-size: 1.8em;
+ 		font-size: 2.2em;
  	}
  }
